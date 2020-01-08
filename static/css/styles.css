@@ -1,19 +1,21 @@
 .button-container {
     float: right;
     margin-top: 20px;
-    margin-right: 20px
+    margin-right: 20px;
 }
 
 .hero {  
-background-image: url('../home_pic.jpg');
+   background-image: url('../home_pic.jpg');
    height: 100vh;
-   width: 100vw
+   width: 100vw;
+   position: relative;
+   background-repeat: round;
 }
 
 .footer {
     bottom: 0px;
     position: relative;
-    width:100%
+    width:100%;
 }
 
 .home_button {
@@ -24,7 +26,25 @@ background-image: url('../home_pic.jpg');
     opacity: 80%;
     margin: 3px;
     height:40px;
-    width: 100px
+    width: 100px;
 }
 
- 
+ .button-book {
+    position: relative;
+    width: 474px;
+    height: 800px;
+    left: 27px;
+    top: 235px;
+ }
+
+ .book-button {
+    background: linear-gradient(#18A800, #0C4803);
+    border-radius: 50px;
+    border: 1px solid white;
+    color: white;
+    opacity: 80%;
+    margin: 3px;
+    height:40px;
+    width: 200px;
+
+ }
