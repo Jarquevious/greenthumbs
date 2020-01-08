@@ -54,4 +54,25 @@
     
  }
 
- font-family: 'Ubuntu', sans-serif;
+ .logo {
+    font-family: 'Ubuntu', sans-serif;
+    /* position: absolute;
+    width: 357px;
+    height: 66px;
+    left: 36px; */
+    top: calc(50% - 66px/2 - 963.5px);
+
+/* ss */
+
+
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.05em;
+    color: #18A800;
+
+ 
+    
+
+ }
