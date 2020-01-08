@@ -18,8 +18,8 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     """Show all Appointments."""
-    return render_template('home.html', appointments=appointments.find())
-
+    return render_template('base.html')
+    
 @app.route('/book_appointment')
 def show_book_appointment_form():
     """Show Book Appointment Form"""

@@ -29,12 +29,12 @@
     width: 100px;
 }
 
- .button-book {
-    position: relative;
-    width: 474px;
-    height: 800px;
-    left: 27px;
-    top: 235px;
+ .book {
+    position: absolute;
+    /* width: 474px;
+    height: 800px; */
+    left: 29px;
+    bottom: 500px;
  }
 
  .book-button {
@@ -44,7 +44,14 @@
     color: white;
     opacity: 80%;
     margin: 3px;
-    height:40px;
+    height:50px;
     width: 200px;
-
+    text-align: center ;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: underline;
+    line-height: 50px;
+    
  }
+
+ font-family: 'Ubuntu', sans-serif;
