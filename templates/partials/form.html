@@ -1,0 +1,54 @@
+{% block content %}
+
+<form method='POST' action='/book_appointment'>
+        
+    <!--User Insert Personal Information-->
+    <h3>What is your First Name?</h3>
+    <input type='text' name='firstname' placeholder="First Name">
+    
+    <h3>What is your Last Name?</h3>
+    <input type='text' name='lastname' placeholder="Last Name">
+    
+    <h3>What is your Street Address?</h3>
+    <input type='text' name='address' placeholder="Enter your Address">
+
+    <h3>What is your City?</h3>
+    <input type='text' name='city' placeholder="Enter your City">
+
+    <h3>What is your State?</h3>
+    <input type='text' name='state' placeholder="Enter your State">
+
+    <h3>What is your Zip Code?</h3>
+    <input type='text' name='zipcode' placeholder="Enter your Zip Code">
+    
+    <br><br>
+    
+    <!--User can select a date and time for their apppointment-->
+    <h3>Appointment Date: <input type="date" name="bday"></h3><br>
+
+    <h3>What time in the evening is good for you?</h3>
+    <select name="time_option" form="time">
+    <option name="time_option" value="5">5:00pm</option>
+    <option name="time_option" value="5.5">5:30pm</option>
+    <option name="time_option" value="6">6:00pm</option>
+    <option name="time_option" value="6.5">6:30pm</option>
+    </select>
+    <br> 
+    
+    <!--User Can Select a Service-->
+    <h3>Select a plant service?</h3>
+    <label class="checkbox-inline">
+    <input type="checkbox" name="service" value="Watering"> Watering<br><br>
+    </label>
+
+    <label class="checkbox-inline">
+    <input type="checkbox" name="service" value="Fertilizing"> Fertilizing<br><br>
+    </label>
+
+    <label class="checkbox-inline">
+    <input type="checkbox" name="serivce" value="Repotting"> Repotting<br><br>
+    </label><br><br>
+
+    <input type='submit' value='Book Your Appointment!'>
+</form>
+{% endblock %}
