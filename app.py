@@ -30,9 +30,17 @@ def submit_appointment():
     """Submit new appointment."""
     print(request.form)
     appointment = {
+
        'firstname':request.form.get('firstname'),
        'lastname':request.form.get('lastname'),
-
+       'address':request.form.get('address'),
+       'city':request.form.get('city'),
+       'state':request.form.get('state'),
+       'zipcode':request.form.get('zipcode'),
+       'bday':request.form.get('bday'),
+       'service':request.form.get('service'), 
+       'date':request.form.get('date'),
+       'time':request.form.get('time'),
    }
     appointment_id = appointments.insert_one(appointment).inserted_id
     return redirect(url_for('appointment_show', appointment_id=appointment_id))
@@ -60,7 +68,9 @@ def appointment_update(appointment_id):
         'state':request.form.get('state'),
         'zipcode':request.form.get('zipcode'),
         'bday':request.form.get('bday'),
-        'service':request.form.get('service') 
+        'service':request.form.get('service'), 
+        'date':request.form.get('date'),
+        'time':request.form.get('time'),
        }
 
     appointments.update_one({'_id': ObjectId(appointment_id)}, {'$set': updated_appointment})

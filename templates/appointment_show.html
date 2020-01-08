@@ -2,16 +2,23 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="card" style="width: 18rem;">
-    <div class="card-body">
-        <h5 class="card-title">{{appointment.firstname}} {{appointment.lastname }}</h5>
-        <p class="card-text"> {{appointment.address }}</p>
-        <a href='/appointment/{{appointment._id}}/edit' class="btn btn-primary">Edit</a>
-        <form method='POST' action='/appointment/{{ appointment._id }}/delete'>
-            <input type='hidden' name='_method' value='DELETE'>
-            <button class='btn btn-primary' type='submit'>Delete</button>
-        </form>
+    <div> 
+     <h1 class="c">Hello {{appointment.firstname}} {{appointment.lastname }}</h1>
     </div>
+
+    <p class="ca"> Your appointment is on {{appointment.date}} {{appointment.address }}</p>
+
+    <a href='/appointment/{{appointment._id}}/edit' class="btn btn-primary">Edit</a>
+
+    <form method='POST' action='/appointment/{{ appointment._id }}/delete'>
+     <input type='hidden' name='_method' value='DELETE'>
+      <button class='btn btn-primary' type='submit'>Delete</button>
+
+        </form>
+
+    </div>
+
 </div>
+
 
 {% endblock %}
