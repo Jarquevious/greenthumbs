@@ -1,0 +1,30 @@
+.button-container {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px
+}
+
+.hero {  
+background-image: url('../home_pic.jpg');
+   height: 100vh;
+   width: 100vw
+}
+
+.footer {
+    bottom: 0px;
+    position: relative;
+    width:100%
+}
+
+.home_button {
+    background: linear-gradient(#18A800, #0C4803);
+    border-radius: 50px;
+    border: 1px solid white;
+    color: white;
+    opacity: 80%;
+    margin: 3px;
+    height:40px;
+    width: 100px
+}
+
+ 
