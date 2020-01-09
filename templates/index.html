@@ -1,3 +1,7 @@
+{% extends 'base.html' %}
+{% block style %}<link rel="stylesheet" href="{{url_for('static', filename ='..static/css/styles.css')}}">
+{% endblock %}
+{% block content %}
 <div>
     <div>
     <div class = "hero">
@@ -17,12 +21,6 @@
   </div>
 </div>
 </div>
-
-
-
-      
-
-
         <!-- footer  -->
         <!-- Footer -->
   <div class ="footer">
@@ -108,3 +106,6 @@
   
   </footer >
 </div>
+</div>
+{% endblock %}
+
