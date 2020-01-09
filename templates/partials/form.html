@@ -1,8 +1,5 @@
 {% block content %}
-
-<form method='POST' action='/book_appointment'>
-        
-    <!--User Insert Personal Information-->
+ <fieldset>
     <h3>What is your First Name?</h3>
     <input type='text' name='firstname' placeholder="First Name">
     
@@ -49,6 +46,5 @@
     <input type="checkbox" name="serivce" value="Repotting"> Repotting<br><br>
     </label><br><br>
 
-    <input type='submit' value='Book Your Appointment!'>
-</form>
+</fieldset>
 {% endblock %}

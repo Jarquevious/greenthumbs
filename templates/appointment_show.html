@@ -2,23 +2,23 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div> 
-     <h1 class="c">Hello {{appointment.firstname}} {{appointment.lastname }}</h1>
-    </div>
-
-    <p class="ca"> Your appointment is on {{appointment.date}} {{appointment.address }}</p>
-
-    <a href='/appointment/{{appointment._id}}/edit' class="btn btn-primary">Edit</a>
-
-    <form method='POST' action='/appointment/{{ appointment._id }}/delete'>
-     <input type='hidden' name='_method' value='DELETE'>
-      <button class='btn btn-primary' type='submit'>Delete</button>
-
-        </form>
-
-    </div>
-
+<div> 
+    <h1 class="c">Hello {{appointment.firstname}} {{appointment.lastname}}</h1>
 </div>
+<div>
+    <p class="ca"> Your appointment is on {{appointment.date}}</p>
+    <p class="ca">{{appointment.address }}</p>
+</div>
+<div>
+    <a href='/appointment/{{appointment_id}}/edit' class="btn btn-primary">Edit</a>
+</div>
+<div>
+    <form method='POST' action='/appointment/{{ appointment_id }}/delete'>
+    <input type='hidden' name='_method' value='DELETE'>
+    <button class='btn btn-primary' type='submit'>Delete</button>
+    </form>
+</div>
+
 
 
 {% endblock %}
