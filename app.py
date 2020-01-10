@@ -40,9 +40,9 @@ def submit_appointment():
        'zipcode':request.form.get('zipcode'),
        'bday':request.form.get('bday'),
        'service':request.form.get('service'), 
-       'date':request.form.get('date'),
        'time':request.form.get('time'),
-   }
+    } 
+    print(appointment)
     appointment_id = appointments.insert_one(appointment).inserted_id
     return redirect(url_for('appointment_show', appointment_id=appointment_id))
 
@@ -69,11 +69,10 @@ def appointment_update(appointment_id):
         'state':request.form.get('state'),
         'zipcode':request.form.get('zipcode'),
         'bday':request.form.get('bday'),
-        'service':request.form.get('service'), 
-        'date':request.form.get('date'),
+        'service':request.form.getlist("service"), 
         'time':request.form.get('time'),
        }
-
+    print(updated_appointment)
     appointments.update_one({'_id': ObjectId(appointment_id)}, {'$set': updated_appointment})
     return redirect(url_for('appointment_show', appointment_id=appointment_id))
 

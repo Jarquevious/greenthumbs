@@ -2,8 +2,8 @@
 {% extends 'base.html' %}
 {% block content %}
     <div class='col-sm-6 col-sm-offset-3'>
-        <form method='POST' action='/appointment/{{appointment._id}}'>
-            <input type='hidden' name='_method' value='PUT'/>
+        <form id="form" method='POST' action='/appointment/{{appointment._id}}'>
+            <input type='hidden' name='_method' value='POST'/>
         {% include 'partials/form.html' %}
             <div class='form-group'>
                 <a href="/">Cancel</a>

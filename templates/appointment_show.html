@@ -6,14 +6,24 @@
     <h1 class="c">Hello {{appointment.firstname}} {{appointment.lastname}}</h1>
 </div>
 <div>
-    <p class="ca"> Your appointment is on {{appointment.date}}</p>
-    <p class="ca">{{appointment.address }}</p>
+    <p class="ca"> Your appointment is on {{ appointment.bday}} at {{ appointment.time }}</p>
+    <p class="ca">{{ appointment.address }}</p>
+    <p class="ca">{{ appointment.city }} {{ appointment.state }}</p>
+    <p class="ca">{{ appointment.zipcode }}</p>
+    
+    {% for service in appointment.service %}
+
+    <p class="ca">{{ service }}</p>
+    {% endfor %}
+
+
+
 </div>
 <div>
-    <a href='/appointment/{{appointment_id}}/edit' class="btn btn-primary">Edit</a>
+    <a href='/appointment/{{appointment._id}}/edit' class="btn btn-primary">Edit</a>
 </div>
 <div>
-    <form method='POST' action='/appointment/{{ appointment_id }}/delete'>
+    <form method='POST' action='/appointment/{{ appointment._id }}/delete'>
     <input type='hidden' name='_method' value='DELETE'>
     <button class='btn btn-primary' type='submit'>Delete</button>
     </form>
