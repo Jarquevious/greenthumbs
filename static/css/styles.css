@@ -16,6 +16,7 @@
     bottom: 0px;
     position: relative;
     width:100%;
+    color: white;
 }
 
 .home_button {
@@ -43,7 +44,6 @@
     border: 1px solid white;
     color: white;
     opacity: 80%;
-    margin: 3px;
     height:60px;
     width: 350px;
     text-align: center ;
@@ -52,6 +52,7 @@
     text-decoration: underline;
     line-height: 55px;
     
+   
  }
 
  .logo {
@@ -98,11 +99,16 @@
     color:white;
     background-color: green;
     border-radius: 35rem;
-
+    margin-left: 540px;
+    margin-top: 1px;
+    font-size: xx-large;
+    border-width: 4px;
+    border-color: white;
 }
 
 .show {
     text-align: center;
     background-repeat: no-repeat;
+    
 }
 
