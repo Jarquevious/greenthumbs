@@ -24,7 +24,7 @@ def index():
 @app.route('/book_appointment')
 def show_book_appointment_form():
     """Show Book Appointment Form"""
-    return render_template('book_appointment.html')
+    return render_template('book_appointment.html', appointment={})
 
 @app.route('/book_appointment', methods=['POST'])
 def submit_appointment():
@@ -42,7 +42,7 @@ def submit_appointment():
        'service':request.form.get('service'), 
        'time':request.form.get('time'),
     } 
-    print(appointment)
+    
     appointment_id = appointments.insert_one(appointment).inserted_id
     return redirect(url_for('appointment_show', appointment_id=appointment_id))
 
