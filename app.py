@@ -14,7 +14,7 @@ client = MongoClient(host=f'{host}?retryWrites=false')
 db = client.Greenthumbs
 appointments = db.appointments
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="static", template_folder="templates")
 
 @app.route('/')
 def index():
@@ -39,7 +39,7 @@ def submit_appointment():
        'state':request.form.get('state'),
        'zipcode':request.form.get('zipcode'),
        'bday':request.form.get('bday'),
-       'service':request.form.get('service'), 
+       'service':request.form.getlist('service'), 
        'time':request.form.get('time'),
     } 
     

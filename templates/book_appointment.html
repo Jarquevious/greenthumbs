@@ -1,14 +1,109 @@
 {%  extends 'base.html'  %}
 
 {% block content %}
-    <div class="book_appointment" style="text-align: center;"> 
-        <h1 class=ddd> Thank you for Choosing Greenthumbs!</h1>
-        <h3> Fill out the form below to have your indoor plants cared for with love! </h3>
+    
+    <div class="book_appointment" style="background-image: url('https://static.businessinsider.com/image/5b7479d52154a321008b50bb.jpg'); background-repeat: no-repeat;
+   
+    background-attachment: fixed;
+    background-size: 100% 100%; "> 
+    <div >
+        <h1 class='ddd' style="color: green; background-color: white;"> Let's get started with the basics</h1>
+        
+    </div>
+            
+
         <form method='POST' action='/book_appointment'>
+            <div class='submit-button ' style="text-align: center;">
 
         {% include 'partials/form.html' %}
-        <input type='submit' value='Book Your Appointment!'>
+        <br><input class="love" style="font-weight:bolder"  type='submit' value='Book Your Appointment!'>
+        <br>
+        <br>
+        </div>
         </form>
-    </div>
-
+    
+</div>
+<div class ="footer">
+    <footer class="page-footer font-small bg-warning pt-4 " >
+  
+      <!-- Footer Links -->
+      <div class="container-fluid text-center text-md-left">
+    
+        <!-- Grid row -->
+        <div class="row">
+    
+          <!-- Grid column -->
+          <div class="col-md-6 mt-md-0 mt-3">
+    
+            <!-- Content -->
+            <h5 class="text-uppercase">Footer Content</h5>
+            <p>Here you can use rows and columns to organize your footer content.</p>
+    
+          </div>
+          <!-- Grid column -->
+    
+          <hr class="clearfix w-100 d-md-none pb-3">
+    
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+    
+            <!-- Links -->
+            <h5 class="text-uppercase">Links</h5>
+    
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Link 1</a>
+              </li>
+              <li>
+                <a href="#!">Link 2</a>
+              </li>
+              <li>
+                <a href="#!">Link 3</a>
+              </li>
+              <li>
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+    
+          </div>
+          <!-- Grid column -->
+    
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+    
+            <!-- Links -->
+            <h5 class="text-uppercase">Links</h5>
+    
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Link 1</a>
+              </li>
+              <li>
+                <a href="#!">Link 2</a>
+              </li>
+              <li>
+                <a href="#!">Link 3</a>
+              </li>
+              <li>
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+    
+          </div>
+          <!-- Grid column -->
+    
+        </div>
+        <!-- Grid row -->
+    
+      </div>
+      <!-- Footer Links -->
+    
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    
+    </footer >
+  </div>
 {% endblock %}

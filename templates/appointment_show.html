@@ -1,14 +1,15 @@
-<!-- templates/appointment_edit.html -->
+<!-- templates/appointment_show.html -->
 {% extends 'base.html' %}
 
 {% block content %}
-<div> 
+<div class='show' style='background-image: url(https://cdn.shopify.com/s/files/1/0150/6262/files/19130-01-336-desktop3_2880x.progressive.jpg?v=1577975223.jpg)'>
+<div > 
     <h1 class="c">Hello {{appointment.firstname}} {{appointment.lastname}}</h1>
 </div>
 <div>
     <p class="ca"> Your appointment is on {{ appointment.bday}} at {{ appointment.time }}</p>
     <p class="ca">{{ appointment.address }}</p>
-    <p class="ca">{{ appointment.city }} {{ appointment.state }}</p>
+    <p class="ca">{{ appointment.city }}, {{ appointment.state }}</p>
     <p class="ca">{{ appointment.zipcode }}</p>
     
     {% for service in appointment.service %}
@@ -27,6 +28,7 @@
     <input type='hidden' name='_method' value='DELETE'>
     <button class='btn btn-primary' type='submit'>Delete</button>
     </form>
+</div>
 </div>
 
 

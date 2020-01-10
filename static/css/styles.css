@@ -1,6 +1,6 @@
 .button-container {
     float: right;
-    margin-top: 20px;
+    margin-top: -60px;
     margin-right: 20px;
 }
 
@@ -44,22 +44,19 @@
     color: white;
     opacity: 80%;
     margin: 3px;
-    height:50px;
-    width: 200px;
+    height:60px;
+    width: 350px;
     text-align: center ;
-    font-weight: bold;
-    font-size: large;
+    font-weight: bolder;
+    font-size: xx-large;
     text-decoration: underline;
-    line-height: 50px;
+    line-height: 55px;
     
  }
 
  .logo {
     font-family: 'Ubuntu', sans-serif;
-    /* position: absolute;
-    width: 357px;
-    height: 66px;
-    left: 36px; */
+    background-color: white;
     top: calc(50% - 66px/2 - 963.5px);
 
 /* ss */
@@ -74,10 +71,38 @@
 
  }
 
- 
-.book_appoinment {
+ .ddd {
+     text-align: center;
+     
+     border: 3px solid #73AD21;
+     font-family: Ubuntu;
+     
 
-    background-color: chartreuse;
+ }
+
+
+
+.fortune {
+    width: 810px;
+    height: 900px;
+    background-color: white;
+    text-align: center;
+    border: 3px solid #73AD21;
+    opacity: .94;
+    padding-left: 20px;
+    font-family: Ubuntu; 
+    border-radius: 20rem;
 }
 
+.love {
+    color:white;
+    background-color: green;
+    border-radius: 35rem;
+
+}
+
+.show {
+    text-align: center;
+    background-repeat: no-repeat;
+}
 

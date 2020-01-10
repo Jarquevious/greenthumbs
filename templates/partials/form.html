@@ -1,22 +1,24 @@
 
+{% extends 'base.html' %}
 
 {% block content %}
-
- <fieldset>
+<br>
+<div class="fortune" style="position: relative; left:325px"> <br>
+ <fieldset><br>
     <h3>What is your First Name?</h3>
-    <input type='text' name='firstname' placeholder="First Name" value="{{ appointment.firstname }}">
-    
+    <input type='text' name='firstname' placeholder="First Name" value="{{ appointment.firstname }}"><br><br>
+        
     <h3>What is your Last Name?</h3>
-    <input type='text' name='lastname' placeholder="Last Name" value="{{ appointment.lastname }}" >
+    <input type='text' name='lastname' placeholder="Last Name" value="{{ appointment.lastname }}"><br><br>
     
     <h3>What is your Street Address?</h3>
-    <input type='text' name='address' placeholder="Enter your Address" value="{{ appointment.address }}">
+    <input type='text' name='address' placeholder="Enter your Address" value="{{ appointment.address }}"><br><br>
 
     <h3>What is your City?</h3>
-    <input type='text' name='city' placeholder="Enter your City" value="{{ appointment.city }}">
+    <input type='text' name='city' placeholder="Enter your City" value="{{ appointment.city }}"><br><br>
 
     <h3>What is your State?</h3>
-    <input type='text' name='state' placeholder="Enter your State" value="{{ appointment.state }}">
+    <input type='text' name='state' placeholder="Enter your State" value="{{ appointment.state }}"><br><br>
 
     <h3>What is your Zip Code?</h3>
     <input type='text' name='zipcode' placeholder="Enter your Zip Code" value="{{ appointment.zipcode }}">
@@ -32,12 +34,12 @@
     <option value="5:30pm">5:30pm</option>
     <option value="6:00pm">6:00pm</option>
     <option value="6:30pm">6:30pm</option>
-    </select>
-    <br> 
+    </select><br>
+    
     
     <!--User Can Select a Service-->
-    <h3>Select a plant service?</h3>
-    <label class="checkbox-inline">
+    <br><h3>Select a plant service?</h3> 
+    <label class="checkbox-inline"><br>
     <input type="checkbox" id="watering" name="service" value="Watering"> Watering<br><br>
     </label>
 
@@ -50,4 +52,5 @@
     </label><br><br>
 
 </fieldset>
+</div>
 {% endblock %}
