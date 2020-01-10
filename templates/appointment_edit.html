@@ -1,7 +1,7 @@
 <!-- templates/appointment_edit.html -->
 {% extends 'base.html' %}
 {% block content %}
-    <div class='col-sm-6 col-sm-offset-3'>
+    <div style="text-align: center;" >
         <form id="form" method='POST' action='/appointment/{{appointment._id}}'>
             <input type='hidden' name='_method' value='POST'/>
         {% include 'partials/form.html' %}

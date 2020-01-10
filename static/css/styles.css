@@ -72,11 +72,12 @@
     letter-spacing: 0.05em;
     color: #18A800;
 
- 
-    
-
  }
 
-.book_appointment {
-    color: blue
+ 
+.book_appoinment {
+
+    background-color: chartreuse;
 }
+
+
